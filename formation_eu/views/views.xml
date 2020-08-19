@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="formation_eu.list">
+      <field name="name">formation_eu list</field>
+      <field name="model">formation_eu.formation_eu</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="formation_eu.action_window">
+      <field name="name">formation_eu window</field>
+      <field name="res_model">formation_eu.formation_eu</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="formation_eu.action_server">
+      <field name="name">formation_eu server</field>
+      <field name="model_id" ref="model_formation_eu_formation_eu"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="formation_eu" id="formation_eu.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="formation_eu.menu_1" parent="formation_eu.menu_root"/>
+    <menuitem name="Menu 2" id="formation_eu.menu_2" parent="formation_eu.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="formation_eu.menu_1_list" parent="formation_eu.menu_1"
+              action="formation_eu.action_window"/>
+    <menuitem name="Server to list" id="formation_eu" parent="formation_eu.menu_2"
+              action="formation_eu.action_server"/>
+-->
+  </data>
+</odoo>

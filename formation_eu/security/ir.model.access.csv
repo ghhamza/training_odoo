@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_formation_eu_formation_eu,formation_eu.formation_eu,model_formation_eu_formation_eu,base.group_user,1,1,1,1
